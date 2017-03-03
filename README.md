@@ -55,15 +55,15 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 ####2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters.  I was able to achieve decent results with only the first channel ('Y') when in YCrCb color space, but still found ALL channels to be superior in minimizing false positives.  Increasing the orientation from 9 to 18 also improved my accuracy.  I tried increasing the number of cells per block to 3 for HOG normalization, but saw no improvement and an increase in computation time.  Eventually I settled on the following:
+I tried various combinations of parameters.  I was able to achieve decent results with only the first channel ('Y') when in YCrCb color space, but still found ALL channels to be superior in minimizing false positives.  Increasing the orientation from 9 to 27 also improved my accuracy and reduced the number of false positives I was seeing.  I tried increasing the number of cells per block to 3 for HOG normalization, but saw no improvement and an increase in computation time. I left pixels per cell at 8. Eventually I settled on the following:
 
 ```python
 color_space = 'YCrCb' # Can be RGB, HSV, LUV, HLS, YUV, YCrCb
-orient = 18  # HOG orientations
+orient = 27  # HOG orientations
 pix_per_cell = 8 # HOG pixels per cell
 cell_per_block = 2 # HOG cells per block
 hog_channel = "ALL" # Can be 0, 1, 2, or "ALL"
-spatial_size = (16, 16) # Spatial binning dimensions
+spatial_size = (32, 32) # Spatial binning dimensions
 hist_bins = 32    # Number of histogram bins
 spatial_feat = True # Spatial features on or off
 hist_feat = True # Histogram features on or off
