@@ -18,7 +18,12 @@ The goals / steps of this project are the following:
 [image4a]: ./output_images/sliding_windows1.png
 [image4b]: ./output_images/sliding_windows2.png
 [image4c]: ./output_images/sliding_windows3.png
-[image5]: ./output_images/hog_subsampling.png
+[image5a]: ./output_images/hog_subsampling1.png
+[image5b]: ./output_images/hog_subsampling2.png
+[image5c]: ./output_images/hog_subsampling3.png
+[image5d]: ./output_images/hog_subsampling4.png
+[image5e]: ./output_images/hog_subsampling5.png
+[image5f]: ./output_images/hog_subsampling6.png
 [image6]: ./examples/labels_map.png
 [image7]: ./output_images/labeled_cars.png
 [video1]: ./project_video.mp4
@@ -102,7 +107,12 @@ In the method `find_heatmap_and_drawn_images` under "Hog Subsampling" a heatmap 
 
 ### Here are six frames and their corresponding heatmaps:
 
-![alt text][image5]
+![alt text][image5a]
+![alt text][image5b]
+![alt text][image5c]
+![alt text][image5d]
+![alt text][image5e]
+![alt text][image5f]
 
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
